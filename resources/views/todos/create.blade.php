@@ -19,20 +19,15 @@
             <textarea name="description" class="p-2 rounded border" id="" placeholder="Description" ></textarea>
         </div>
         <div class="py-2">
-            <div class="flex justify-center pb-4 px-4">
-                <h2 class="text-lg  pb-4 justify-between">
-                    Add steps for task
-                </h2>
-                <span class="fas fa-plus px-2 py-1 cursor-pointer"></span>
-            </div>
             
-            <input type="text" name="step" id="" class="py-2 px-2 border rounded" placeholder="Describe Step">
+            @livewire("step")
+        
         </div>
         <div class="py-1">
             <input type="submit" value="Create" class="p-2 border rounded">
         </div>
     </form>
-
+    {{-- @livewire('counter') --}}
     {{-- <a class="m-5 px-1 bg-white-400 cursor-pointer rounded border " href="{{route('todo.index')}}">Back</a> --}}
 
 @endsection
